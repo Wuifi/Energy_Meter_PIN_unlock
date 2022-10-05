@@ -1,0 +1,9 @@
+2022-10-05 20:54:30,063 - PIN - DEBUG - PIN Unlock started
+2022-10-05 20:54:30,120 - PIN - DEBUG - first PIN: '0038'
+2022-10-05 20:54:30,120 - PIN - DEBUG - last PIN: '9999'
+2022-10-05 20:54:30,121 - PIN - DEBUG - Starting sequence with '9961' PIN-entries
+2022-10-05 20:54:56,649 - PIN - DEBUG - attempt nr: '1' PIN: '0038' time last PIN: '26.528' sec
+2022-10-05 20:55:23,681 - PIN - DEBUG - attempt nr: '2' PIN: '0039' time last PIN: '27.031' sec
+2022-10-05 20:55:46,703 - PIN - DEBUG - attempt nr: '3' PIN: '0040' time last PIN: '23.021' sec
+2022-10-05 20:56:10,228 - PIN - DEBUG - attempt nr: '4' PIN: '0041' time last PIN: '23.524' sec
+2022-10-05 20:56:34,253 - PIN - DEBUG - attempt nr: '5' PIN: '0042' time last PIN: '24.023' sec
