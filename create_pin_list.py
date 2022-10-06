@@ -7,7 +7,6 @@ import numpy as np
 
 def PINlistgenerator(start,end):
     
-    print('Generating PIN List')
     PINs=np.linspace(start,end,(end-start)).astype('int')
     # Converting numpy to list
     PINs = list(PINs)

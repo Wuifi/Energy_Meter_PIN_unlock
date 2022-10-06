@@ -61,12 +61,12 @@ try:
     # stop propagting to root logger
     logger.propagate = False
  
-    print('PIN Unlock started at: '+ time.ctime())
-    logger.debug('PIN Unlock started')
-    
+    #print('PIN Unlock started at: '+ time.ctime())
+    logger.debug('PIN Unlock started, Generating PIN List')
+    #print('Generating PIN List')
     PINlist=PINlistgenerator(start_PINint,end_PINint)
     #PINlist = ["0101","1234","4321", "1021"]
-    print('Starting sequence with '+ str(len(PINlist))+' PIN-entries')
+    #print('Starting sequence with '+ str(len(PINlist))+' PIN-entries')
     #print(PINlist)
     logger.debug("PIN Unlock started, first PIN is: '%s'" % str(PINlist[0]))
     logger.debug("PIN Unlock started, last PIN is: '%s'" % str(PINlist[len(PINlist)-1]))
@@ -85,7 +85,7 @@ try:
             time.sleep(pulse_time_init)
             lgpio.gpio_write(h, LED, 0)
             time.sleep(waiting_time_init)
-            print('Pulse pattern for entry nr. '+str(i)+' is created : PIN number '+ PINstring)
+            #print('Pulse pattern for entry nr. '+str(i)+' is created : PIN number '+ PINstring)
             PIN2pulse(PINstring,h,LED,pulse_time_short,waiting_time_short,waiting_time_long)
 
             #print ('EINGABE der PIN  '+ PINstring + ' BEENDET-------')
@@ -97,7 +97,7 @@ try:
             logger.debug("attempt nr: '%s' PIN: '%s' time last PIN: '%s' sec" % (str(i),PINstring,str(int(datetime_diff * 10**3)/1000)))
 
             i += 1
-    print ('Programm beendet - alle PINs eingegeben-------')
+    #print ('Programm beendet - alle PINs eingegeben-------')
     logger.debug("Program finished - all PIN patterns created")
     
 except KeyboardInterrupt as e:
