@@ -16,58 +16,51 @@ import logging
 import lgpio
 from create_pulse_pattern import *
 from create_pin_list import * 
+import config
 
-__version__ = "0.0.1"
-__version_date__ = "2022-10-5"
+__version__ = "0.0.2"
+__version_date__ = "2022-10-6"
 __description__ = "Energy_Meter_PIN_Unlock"
 __license__ = "MIT"
 
-#settings for the device
-start_PINint=38
-end_PINint=9999
+#handover variables from config.py file
+start_PINint = config.start_PINint
+end_PINint =   config.end_PINint
 
-pulse_time_init=0.5
-waiting_time_init=3.5
+pulse_time_init =   config.pulse_time_init
+waiting_time_init = config.waiting_time_init
 
-pulse_time_short=0.1
-waiting_time_short=0.4 # time between two pulses to increase the digits
+pulse_time_short =   config.pulse_time_short
+waiting_time_short = config.waiting_time_short
+#pulse_time_long =    config.pulse_time_long #wird für die PIN nicht gebraucht
 
-#pulse_time_long=6 #wird für die PIN nicht gebraucht
-waiting_time_long=3 # time between two different digits 
+waiting_time_long=config.waiting_time_long 
 
-#(after this time without any short pulse, the device goes to the next digit)
-waitingtimenextPIN=5 #120sec time between two different attempts 
-#(after this time without any short pulse, the device goes back to the default display)
+waitingtimenextPIN=config.waitingtimenextPIN 
 
-#Die optische Taste hat zwei Aktionen:
-# Kurzes Drücken oder Blinken mit einer Taschenlampe (kürzer als 2 Sekunden)
-# Langes Drücken oder Blinken mit einer Taschenlampe (länger als 5 Sekunden)
-
-## settings for the HW-Interface to the LED-flashlight
-LED = 24
-# open the gpio chip and set the LED pin as output
-h = lgpio.gpiochip_open(0)
-lgpio.gpio_claim_output(h, LED)
-
-
-########
-#create a logger
-logger = logging.getLogger('PIN')
-#set logging level
-logger.setLevel(logging.DEBUG)
-
-logfilename='PIN_unlock.log' #new file for each run
-handler = logging.FileHandler(logfilename)
-# create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-# stop propagting to root logger
-logger.propagate = False
-
+LED = config.LED
+#####
 
 try:
-    
+    # open the gpio chip and set the LED pin as output
+    h = lgpio.gpiochip_open(0)
+    lgpio.gpio_claim_output(h, LED)
+
+    ########
+    #create a logger
+    logger = logging.getLogger('PIN')
+    #set logging level
+    logger.setLevel(logging.DEBUG)
+
+    logfilename='PIN_unlock.log' #each run will be attached to the existing log-file
+    handler = logging.FileHandler(logfilename)
+    # create a logging format
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    # stop propagting to root logger
+    logger.propagate = False
+ 
     print('PIN Unlock started at: '+ time.ctime())
     logger.debug('PIN Unlock started')
     

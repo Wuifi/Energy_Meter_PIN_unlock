@@ -5,6 +5,8 @@ __pycache__/
 
 #user specific config including login credentials
 PIN_unlock.log
+config.py
+
 # C extensions
 *.so
 
