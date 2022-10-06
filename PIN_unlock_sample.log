@@ -1,9 +1,52 @@
+logfile for PIN_unlock.py
 2022-10-05 20:54:30,063 - PIN - DEBUG - PIN Unlock started
-2022-10-05 20:54:30,120 - PIN - DEBUG - first PIN: '0038'
-2022-10-05 20:54:30,120 - PIN - DEBUG - last PIN: '9999'
+2022-10-05 20:54:30,120 - PIN - DEBUG - PIN Unlock started, first PIN is : '0038'
+2022-10-05 20:54:30,120 - PIN - DEBUG - PIN Unlock started, last PIN is : '9999'
 2022-10-05 20:54:30,121 - PIN - DEBUG - Starting sequence with '9961' PIN-entries
 2022-10-05 20:54:56,649 - PIN - DEBUG - attempt nr: '1' PIN: '0038' time last PIN: '26.528' sec
 2022-10-05 20:55:23,681 - PIN - DEBUG - attempt nr: '2' PIN: '0039' time last PIN: '27.031' sec
 2022-10-05 20:55:46,703 - PIN - DEBUG - attempt nr: '3' PIN: '0040' time last PIN: '23.021' sec
 2022-10-05 20:56:10,228 - PIN - DEBUG - attempt nr: '4' PIN: '0041' time last PIN: '23.524' sec
 2022-10-05 20:56:34,253 - PIN - DEBUG - attempt nr: '5' PIN: '0042' time last PIN: '24.023' sec
+2022-10-06 05:04:56,000 - PIN - DEBUG - PIN Unlock started
+2022-10-06 05:04:56,058 - PIN - DEBUG - PIN Unlock started, first PIN is : '0042'
+2022-10-06 05:04:56,058 - PIN - DEBUG - PIN Unlock started, last PIN is : '9999'
+2022-10-06 05:04:56,058 - PIN - DEBUG - Starting sequence with a total of '9957' PIN-entries
+2022-10-06 05:05:20,084 - PIN - DEBUG - attempt nr: '1' PIN: '0042' time last PIN: '24.025' sec
+2022-10-06 05:05:44,610 - PIN - DEBUG - attempt nr: '2' PIN: '0043' time last PIN: '24.524' sec
+2022-10-06 05:06:09,638 - PIN - DEBUG - attempt nr: '3' PIN: '0044' time last PIN: '25.028' sec
+2022-10-06 05:06:35,168 - PIN - DEBUG - attempt nr: '4' PIN: '0045' time last PIN: '25.529' sec
+2022-10-06 05:07:01,198 - PIN - DEBUG - attempt nr: '5' PIN: '0046' time last PIN: '26.029' sec
+2022-10-06 05:07:27,730 - PIN - DEBUG - attempt nr: '6' PIN: '0047' time last PIN: '26.53' sec
+2022-10-06 05:07:54,761 - PIN - DEBUG - attempt nr: '7' PIN: '0048' time last PIN: '27.031' sec
+2022-10-06 05:08:22,294 - PIN - DEBUG - attempt nr: '8' PIN: '0049' time last PIN: '27.532' sec
+2022-10-06 05:08:45,821 - PIN - DEBUG - attempt nr: '9' PIN: '0050' time last PIN: '23.526' sec
+2022-10-06 05:09:09,844 - PIN - DEBUG - attempt nr: '10' PIN: '0051' time last PIN: '24.022' sec
+2022-10-06 05:09:34,371 - PIN - DEBUG - attempt nr: '11' PIN: '0052' time last PIN: '24.526' sec
+2022-10-06 05:09:59,400 - PIN - DEBUG - attempt nr: '12' PIN: '0053' time last PIN: '25.028' sec
+2022-10-06 05:10:24,930 - PIN - DEBUG - attempt nr: '13' PIN: '0054' time last PIN: '25.529' sec
+2022-10-06 05:10:50,955 - PIN - DEBUG - attempt nr: '14' PIN: '0055' time last PIN: '26.024' sec
+2022-10-06 05:11:17,484 - PIN - DEBUG - attempt nr: '15' PIN: '0056' time last PIN: '26.528' sec
+2022-10-06 05:11:44,514 - PIN - DEBUG - attempt nr: '16' PIN: '0057' time last PIN: '27.029' sec
+2022-10-06 05:12:12,047 - PIN - DEBUG - attempt nr: '17' PIN: '0058' time last PIN: '27.532' sec
+2022-10-06 05:12:40,085 - PIN - DEBUG - attempt nr: '18' PIN: '0059' time last PIN: '28.037' sec
+2022-10-06 05:13:04,107 - PIN - DEBUG - attempt nr: '19' PIN: '0060' time last PIN: '24.021' sec
+2022-10-06 05:13:28,635 - PIN - DEBUG - attempt nr: '20' PIN: '0061' time last PIN: '24.527' sec
+2022-10-06 18:17:09,935 - PIN - DEBUG - PIN Unlock started
+2022-10-06 18:17:09,992 - PIN - DEBUG - PIN Unlock started, first PIN is : '0061'
+2022-10-06 18:17:09,993 - PIN - DEBUG - PIN Unlock started, last PIN is : '9999'
+2022-10-06 18:17:09,993 - PIN - DEBUG - Starting sequence with a total of '9938' PIN-entries
+2022-10-06 18:17:34,519 - PIN - DEBUG - attempt nr: '1' PIN: '0061' time last PIN: '24.525' sec
+2022-10-06 18:17:59,548 - PIN - DEBUG - attempt nr: '2' PIN: '0062' time last PIN: '25.028' sec
+2022-10-06 18:18:25,078 - PIN - DEBUG - attempt nr: '3' PIN: '0063' time last PIN: '25.529' sec
+2022-10-06 18:18:51,109 - PIN - DEBUG - attempt nr: '4' PIN: '0064' time last PIN: '26.03' sec
+2022-10-06 18:19:17,638 - PIN - DEBUG - attempt nr: '5' PIN: '0065' time last PIN: '26.528' sec
+2022-10-06 18:19:44,670 - PIN - DEBUG - attempt nr: '6' PIN: '0066' time last PIN: '27.031' sec
+2022-10-06 18:20:12,201 - PIN - DEBUG - attempt nr: '7' PIN: '0067' time last PIN: '27.53' sec
+2022-10-06 18:20:40,235 - PIN - DEBUG - attempt nr: '8' PIN: '0068' time last PIN: '28.033' sec
+2022-10-06 18:21:08,770 - PIN - DEBUG - attempt nr: '9' PIN: '0069' time last PIN: '28.534' sec
+2022-10-06 18:21:33,298 - PIN - DEBUG - attempt nr: '10' PIN: '0070' time last PIN: '24.527' sec
+2022-10-06 18:21:58,325 - PIN - DEBUG - attempt nr: '11' PIN: '0071' time last PIN: '25.026' sec
+2022-10-06 18:22:23,855 - PIN - DEBUG - attempt nr: '12' PIN: '0072' time last PIN: '25.529' sec
+2022-10-06 18:22:49,886 - PIN - DEBUG - attempt nr: '13' PIN: '0073' time last PIN: '26.029' sec
+2022-10-06 18:23:16,417 - PIN - DEBUG - attempt nr: '14' PIN: '0074' time last PIN: '26.53' sec

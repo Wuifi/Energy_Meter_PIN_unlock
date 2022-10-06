@@ -68,8 +68,8 @@ try:
     #PINlist = ["0101","1234","4321", "1021"]
     print('Starting sequence with '+ str(len(PINlist))+' PIN-entries')
     #print(PINlist)
-    logger.debug("first PIN: '%s'" % str(PINlist[0]))
-    logger.debug("last PIN: '%s'" % str(PINlist[len(PINlist)-1]))
+    logger.debug("PIN Unlock started, first PIN is: '%s'" % str(PINlist[0]))
+    logger.debug("PIN Unlock started, last PIN is: '%s'" % str(PINlist[len(PINlist)-1]))
     logger.debug("Starting sequence with a total of '%s' PIN-entries" % str(len(PINlist)) )
 
     i=1
