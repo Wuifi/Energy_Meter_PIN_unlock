@@ -7,6 +7,9 @@ __pycache__/
 PIN_unlock.log
 config.py
 
+# nohup - to run the script as a background process without terminal
+nohup.out
+
 # C extensions
 *.so
 
